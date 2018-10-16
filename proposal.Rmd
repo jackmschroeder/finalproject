@@ -1,0 +1,21 @@
+---
+title: "Final Project"
+author: "Jack Schroeder"
+date: "10/16/2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(dplyr)
+library(knitr)
+library(readxl)
+
+cycle <- read_excel("hitforcycle.xls")
+```
+
+## Proposal
+
+My final project will analyze the baseball players who have hit for the cycle (hit a single, double, triple, and home run in the same game). This feat has been accomplished 271 times in regular season play (and once in the playoffs). With an access code from the Harvard Sports Analysis Collective, I compiled a dataset of each of these regular-season occurrences (to which I can add the single time it happened in the playoffs). The dataset is in my repo, and has been assigned as `cycle` in this markdown file. My goal is to create a Shiny app that allows one to interactively view the dataset through graphs and maps.
